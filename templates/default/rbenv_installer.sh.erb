@@ -1,0 +1,5 @@
+VERSIONE="<%= @ruby %>"
+curl https://raw.github.com/gist/2600122/2-$VERSIONE-patched.sh > /tmp/$VERSIONE-perf
+rbenv install /tmp/$VERSIONE-perf > /tmp/ruby.log
+rbenv rehash
+chown -R rbenv:rbenv /opt/rbenv/
