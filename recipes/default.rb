@@ -49,3 +49,7 @@ end
 
 rbenv_global node["rubymachine"]["default"]
 
+execute "rbenv rehash" do
+  command "rbenv rehash"
+end
+
