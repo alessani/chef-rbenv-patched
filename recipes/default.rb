@@ -51,7 +51,7 @@ execute "rbenv rehash" do
   command "rbenv rehash"
 end
 
-execute "set global ruby"
+execute "set global ruby" do
   command "rbenv global #{node["rubymachine"]["default"]}"
 end
 
