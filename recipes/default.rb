@@ -47,4 +47,5 @@ node["rubymachine"]["patched_rubies"].each do |ruby_ver|
   end
 end
 
+rbenv_global node["rubymachine"]["default"]
 
