@@ -48,10 +48,10 @@ node["rubymachine"]["patched_rubies"].each do |ruby_ver|
 end
 
 execute "rbenv rehash" do
-  command "rbenv rehash"
+  command "/opt/rbenv/bin/rbenv rehash"
 end
 
 execute "set global ruby" do
-  command "rbenv global #{node["rubymachine"]["default"]}"
+  command "/opt/rbenv/bin/rbenv global #{node["rubymachine"]["default"]}"
 end
 
